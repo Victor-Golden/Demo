@@ -23,22 +23,23 @@ import Staking from "./views/Staking/Staking.js";
 import CreateToken from "./views/CreateToken/CreateToken.js";
 // core components/./views for RTL layout
 import RTLPage from "./views/RTLPage/RTLPage.js";
+import Lock from "./views/Lock/Lock.tsx";
 
 const dashboardRoutes = [
+  // {
+  //   path: "/tokenlock",
+  //   name: "Token Lock",
+  //   rtlName: "التطور للاحترافية",
+  //   icon: LockIcon,
+  //   component: TokenLock,
+  //   layout: "/client",
+  // },
   {
-    path: "/tokenlock",
-    name: "Token Lock",
-    rtlName: "التطور للاحترافية",
+    path: "/lock",
+    name: "Lock",
+    rtlName: "التطور",
     icon: LockIcon,
-    component: TokenLock,
-    layout: "/client",
-  },
-  {
-    path: "/liquiditylock",
-    name: "Liquidity Lock",
-    rtlName: "التطور للاحترافية",
-    icon: LockIcon,
-    component: LiquidityLock,
+    component: Lock,
     layout: "/client",
   },
   {
