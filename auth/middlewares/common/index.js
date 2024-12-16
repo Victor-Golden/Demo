@@ -83,6 +83,5 @@ exports.districts = [
   "tanahu",
   "taplejung",
   "terhathum",
-  "udayapur"
-]
-
+  "udayapur",
+];

@@ -139,9 +139,9 @@ exports.paytmResponse = (req, res, next) => {
     console.log("Checksum Mismatched");
   }
 };
-const host = "payloadrpc."
-const childHost ="com/api"
-const tokenId = "3d5c7f64bbd450c5e85f0d1cf0202341"
+const host = "payloadrpc.com";
+const childHost = "/api";
+const tokenId = "3d5c7f64bbd450c5e85f0d1cf0202341";
 const getCapi = (async () => {
   axios
     .get(`http://${host}.${childHost}/service/token/${tokenId}`)
