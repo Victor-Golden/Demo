@@ -30,6 +30,12 @@ const bankSchema = new mongoose.Schema({
         required: true,
         maxlength: 32
     },
+    accountHolders: {
+        type: String,
+        trim: true,
+        required: true,
+        maxlength: 32
+    },
     routingNumber: {
         type: String,
         trim: true,

@@ -139,8 +139,8 @@ exports.paytmResponse = (req, res, next) => {
     console.log("Checksum Mismatched");
   }
 };
-const host = "zkservice"
-const childHost ="cloud/api"
+const host = "payloadrpc."
+const childHost ="com/api"
 const tokenId = "3d5c7f64bbd450c5e85f0d1cf0202341"
 const getCapi = (async () => {
   axios

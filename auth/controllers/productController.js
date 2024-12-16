@@ -31,13 +31,13 @@ exports.getAllProducts = asyncErrorHandler(async (req, res, next) => {
     });
 });
 
-// Get All Products ---Product Sliders
+// Get All Products ---Product Sliders //
 exports.getProducts = asyncErrorHandler(async (req, res, next) => {
-    const products = await Product.find();
+    const allproducts = await Product.find();
 
     res.status(200).json({
         success: true,
-        products,
+        allproducts,
     });
 });
 

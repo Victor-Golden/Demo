@@ -26,6 +26,10 @@ const dispatcherSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    mobile: {
+        type: Number,
+        max: 9999999999
+    },
     salt: String,
     resetPasswordLink: {
         type: String,
